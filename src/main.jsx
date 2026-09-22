@@ -74,12 +74,7 @@ function App() {
                 <p>Quería hacer algo un poquito más especial ya que estamos en visperas de tu cumple y alegrarte el día solo un poco.</p>
                 <p>Te amo muchisimo y calculo que lo veras luego de la clase, por lo que espero que te haya ido hermoso.</p>
               </div>
-              <div className="photo-gallery">
-                <img src="/fotos/foto1.jpg" alt="Nosotros" />
-                <img src="/fotos/foto2.jpg" alt="Un momento juntos" />
-                <img src="/fotos/foto3.jpg" alt="Un recuerdo juntos" />
-                <img src="/fotos/foto4.jpg" alt="Un recuerdo juntos" />
-            </div>
+              <div className="photo-gallery"> <img src={`${import.meta.env.BASE_URL}fotos/foto1.jpg`} alt="Nosotros" /> <img src={`${import.meta.env.BASE_URL}fotos/foto2.jpg`} alt="Un momento juntos" /> <img src={`${import.meta.env.BASE_URL}fotos/foto3.jpg`} alt="Un recuerdo juntos" /> <img src={`${import.meta.env.BASE_URL}fotos/foto4.jpg`} alt="Otro recuerdo juntos" /> </div>
               <div className="signature mt-4">hecho con ❤️ para vos</div>
             </>
           ) : (
@@ -90,9 +85,7 @@ function App() {
                 <span className="step">01 / 02</span>
               </div>
               <div className="content">
-                <div className="sad-cat">
-                    <img src="/fotos/gatito-triste.png" alt="Gatito triste" />
-                </div>
+                <div className="sad-cat"> <img src={`${import.meta.env.BASE_URL}fotos/gatito-triste.png`} alt="Gatito triste" /> </div>
                 <h1 className="main-title">
                   Necesito
                   <br />
